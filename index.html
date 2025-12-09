@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osiyo Ismailova VLS</title>
+    <style>
+.signUp_info {max-width: 296px;text-align: center;font-family: "TRY Grtsk", sans-serif;font-weight: 700;font-size: clamp(19px, 6vw, 22px);line-height: 125%;margin-bottom: 18px;margin-left: auto;margin-right: auto;}.homeFormErrorText {color: #e53e3e;margin-bottom: 12px;font-size: 14px;font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;padding-top: 5px;padding-bottom: 5px;}.HomeFormRowInput, .HomeFormRowLabel {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;font-size: 14px;}.homeForm-label {font-size: 14px;line-height: 125%;font-weight: 400;font-family: Involve, sans-serif;margin-bottom: 2px;}.HomeFormRow {margin-bottom: 15px;margin-top: 6px;}.HomeFormRowLabel {display: block;margin-bottom: 6px;color: #000;}.HomeFormRowInput {width: 100%;padding: 10px 30px;background-color: white;border: 1px solid #BFBFBF;min-height: 40px;border-radius: 8px;font-weight: 400;outline: 0;height: 50px;transition: border-color 0.2s;}.HomeFormRowInput:focus {border-color: #828282;}.HomeFormRowInput::placeholder {color: #aaa;}#registrationForm2 {position: relative;padding: 20px 25px;border-radius: 30px;background: #F6F6F6;z-index: 1;}#registrationForm2::before {content: "";position: absolute;inset: 0;padding: 2px;border-radius: inherit;background: linear-gradient(180deg, #16D7C2 0%, #0C7166 100%);-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);-webkit-mask-composite: xor;mask-composite: exclude;z-index: -1;}.HomeFormBtn {margin-left: auto;margin-right: auto;cursor: pointer;border-radius: 50px;background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%);transition: 0.3s;box-shadow: 0px 4px 0px 0px #8C0000;font-weight: 700;text-transform: uppercase;font-size: 18px;line-height: 100%;color: white;border: none;position: relative;display: flex;align-items: center;justify-content: center;font-family: "TRY Grtsk", sans-serif;padding: clamp(20px, 6vw, 25px);transition: all 0.3s;cursor: pointer;position: relative;max-width: 271px;}.HomeFormBtn__arrow {position: absolute;left: 30px;top: 50%;transform: translateY(-50%);}.HomeFormBtn:disabled {cursor: not-allowed;opacity: 70%;background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%);}.phone-input-container {display: flex;align-items: center;position: relative;margin-top: 6px;}.country-selector {margin-right: -20px;z-index: 20;position: relative;}.selected-country {display: flex;align-items: center;padding: 10px;border: 1px solid #BFBFBF;border-radius: 6px;background-color: #858585;color: white;cursor: pointer;min-height: 50px;font-family: sans-serif !important;font-weight: 400 !important;}.country-dropdown {position: absolute;margin-top: 10px;top: 100%;left: 0;width: 100%;background-color: transparent;border: 1px solid #2B2B2B80;border-radius: 6px;box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);z-index: 40;max-height: 200px;overflow-y: auto;font-family: sans-serif !important;font-weight: 400 !important;}.country-option {display: flex;align-items: center;padding: 10px;cursor: pointer;font-family: sans-serif;font-weight: 400 !important;background-color: #fff;}.country-option:hover {background-color: #f3f7f8;}.country-option.selected {background-color: #e6f0fa;}.country-code {margin-left: auto;margin-right: 10px;}@media (max-width:440px) {#registrationForm2 {padding: 15px 20px;}}
+    </style>
+
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/main.css" />
+    </noscript>
+</head>
+
+<body>
+    <div class="wrapper__shaddow">
+        <div class="hero__top__left__shaddow"></div>
+        <div class="hero__top__right__shaddow"></div>
+    </div>
+    <section class="hero">
+        <div class="hero__container container">
+            <div class="hero__top">
+                <div class="hero__top__item">
+                    <h3 class="hero__top__title">2500</h3>
+                    <p class="hero__top__text">Obunachilar</p>
+                </div>
+                <div class="hero__top__line"></div>
+                <div class="hero__top__item">
+                    <h3 class="hero__top__title">4 yillik</h3>
+                    <p class="hero__top__text">Tajriba</p>
+                </div>
+                <div class="hero__top__line"></div>
+                <div class="hero__top__item">
+                    <h3 class="hero__top__title">1000+</h3>
+                    <p class="hero__top__text">Mijozlar</p>
+                </div>
+            </div>
+            <div class="hero__top__lines"></div>
+            <h1 class="hero__title">Dieta va Sportsiz</h1>
+            <p class="hero__text">ozing va qayta semirmang!</p>
+
+            <div class="hero__subBox" style="margin-bottom: 29px;">🍏🤩</div>
+
+            <div class="hero__images"></div>
+
+
+            <form id="registrationForm2" name="contact-form registrationForm">
+                <p class="signUp_info">
+                    Kursda qatnashish uchun ro’yxatdan o’ting:
+                </p>
+
+                <label for="name2" class="homeForm-label">Ismingiz</label>
+                <div class="HomeFormRow mb-2">
+                    <input class="HomeFormRowInput" placeholder="Ismingizni kiriting" type="text" id="name2"
+                        style="padding-left: 15px;" />
+                    <p class="homeFormErrorText" id="nameError2" style="display: none">
+                        Iltimos, ismingizni kiriting
+                    </p>
+                </div>
+                <div class="HomeFormRow mb-3">
+                    <label class="homeForm-label">Telefon raqamingiz</label>
+                    <div class="phone-input-container">
+                        <div class="country-selector">
+                            <div class="selected-country" id="selectedCountry2" style=" border-radius: 10px">
+                                <span id="selectedCountryCode2">uz</span>
+                                <svg id="dropdownIcon2" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="country-dropdown" id="countryDropdown2" style="display: none"></div>
+                        <input class="HomeFormRowInput tel" type="tel" id="phone2" name="phone"
+                            placeholder="00 000-00-00" style="border-radius: 10px" />
+                    </div>
+                    <p class="homeFormErrorText" id="phoneError2" style="display: none">
+                        ❌ Telefon raqam mos emas!
+                    </p>
+                </div>
+                <div id="errorMessage2" class="homeFormErrorText"
+                    style="display: none; color: red; margin-bottom: 10px">
+                    Xatolik yuz berdi, qayta urinib ko'ring.
+                </div>
+                <button class="HomeFormBtn" id="submitBtn2" style="margin-bottom: 10px;">
+                    Ro’yxatdan o’tish
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="teacher">
+        <div class="teacher__container container">
+            <div class="teacher__top">
+                <h2 class="teacher__title">Ustozingiz kim?</h2>
+                <div class="hero__subBox">😍👇</div>
+            </div>
+
+            <img class="teacher__arrow" src="./images/arrow.avif" loading="lazy" alt="arrow">
+
+            <div class="teacher__row">
+                <ul class="teacher__col">
+                    <li class="teacher__col__card">
+                        <img class="teacher__col__card__img" src="./images/verfiy.png" loading="lazy" alt="verfiy">
+                        <p class="teacher__col__card__text"><span>Oliy ma’lumotli</span> Nutritsiolog, Dietolog</p>
+                    </li>
+                    <li class="teacher__col__card">
+                        <img class="teacher__col__card__img" src="./images/verfiy.png" loading="lazy" alt="verfiy">
+                        <span class="">
+                            <h3 class="teacher__col__card__title">Shaxsiy natija:</h3>
+                            <p class="teacher__col__card__text">Tug’ruqdan so’ng 120kg dan <br class="only__mobile"> 60kg <br class="only__dasktop"> gacha ozganman,<br class="only__mobile">
+                                <span>qayta semirishlarsiz</span>
+                            </p>
+                        </span>
+                    </li>
+                    <li class="teacher__col__card">
+                        <img class="teacher__col__card__img" src="./images/verfiy.png" loading="lazy" alt="verfiy">
+
+                        <span>
+                            <h3 class="teacher__col__card__title">Mijozlar natijasi:</h3>
+                            <span >
+                                <p class="teacher__col__card__texts">2 oyda -5 kg dan -45 kg ozish</p>
+                                <p class="teacher__col__card__texts">5 oyda -70 kg ozish</p>
+                                <p class="teacher__col__card__texts">51 xildan ortiq kasalliklardan <br> shifo topish va
+                                    farzandli
+                                    bo’lish</p>
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+
+                <img class="speaker__images" src="./images/speaker.avif" width="243" height="304" loading="lazy"
+                    decoding="async" alt="speaker img">
+                <div class="speaker__gradient"></div>
+            </div>
+
+            <button class="button registerBtns">Ro’yxatdan o’tish</button>
+        </div>
+    </section>
+
+    <section class="course">
+        <div class="course__container container">
+            <div class="course__top">
+                <h2 class="teacher__title">Kursda nimalarni <br> o’rganasiz?</h2>
+                <div class="hero__subBoxs">🤫🌱</div>
+            </div>
+
+
+            <div class="course__col">
+                <div class="course__col__card">
+                    <div class="course__col__card__img"></div>
+                    <h3 class="course__col__title">Oldingi siz:</h3>
+
+                    <ul class="course__col__card__list">
+                        <li class="course__col__card__list__item"><span>Tug’ruqdan keyingi vazndan</span> qutila
+                            olmagansiz, <br> hozirgi tashqi
+                            ko’rinishingiz yoqmaydi</li>
+                        <li class="course__col__card__list__item">Doimiy <span>shirinlik</span> va <span>nonga</span>
+                            bo’lgan xohish sizni <br> qiynaydi,
+                            ozish jarayonida ularni yeya <br> olmaganingizdan <span>asabiylashasiz</span></li>
+                        <li class="course__col__card__list__item">Ozish uchun har xil marafon, sportlarga <br>
+                            qatnashasiz, ozasiz ammo <span>natija esa <br>
+                                vaqtinchalik, qayta semirasiz</span></li>
+                        <li class="course__col__card__list__item"><span>Bo’g’imlaringizda og’riqlar</span> va tanangizni
+                            <br> ba’zi qismlarida
+                            qorayish,toshmalar bor
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="course__col__card">
+                    <div class="course__col__card__img"></div>
+                    <h3 class="course__col__title">Kursdan keyingi siz:</h3>
+
+                    <ul class="course__col__card__list">
+                        <li class="course__col__card__list__item">Tug’ruqdan keyingi vazningizdan, teringiz <br>
+                            osilmasdan oson qutilasiz va <span>yaxshi
+                                ko’rgan <br> liboslaringizni kiya olasiz</span></li>
+                        <li class="course__col__card__list__item">Ozishda <span>dieta va sport bilan
+                                shug’ullanmaysiz,</span> <br> ammo 2 oyda -5kg dan -45kg
+                            gacha qayta <br> semirmaydigan bo’lib ozasiz</li>
+                        <li class="course__col__card__list__item">Dietasiz ozganingiz va Defitsitlaringiz <br>
+                            yopilganligi hisobiga, asabiylik, uyqusizlik
+                            sizni <br> tark etadi. <span>51 xil kasalligingizga davo topasiz</span></li>
+                        <li class="course__col__card__list__item">Boshqa ozish marafonlariga qatnashmaysiz, <br> chunki
+                            endi <span>qayta semirmaysiz</span>😉
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="button registerBtns">Ro’yxatdan o’tish</button>
+        </div>
+    </section>
+
+     <!-- Modal -->
+     <div id="registrationModal" class="homeModal" style="display: none">
+        <div class="homeModalOverlay"></div>
+        <div class="homeFormContainer">
+            <button class="closeButton" id="closeModalBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+                    <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="homeFormTop">
+                <h1 class="homeFormTopTitle">
+                    Davom etish uchun <br> ma'lumotlaringizni kiriting
+                </h1>
+            </div>
+            <form id="registrationForm" name="contact-form registrationForm">
+                <div class="HomeFormRow mb-2">
+                    <label class="HomeFormRowLabel" for="name">Ismingizni</label>
+                    <input class="HomeFormRowInput" style="padding-left: 15px;" type="text" id="name" name="name" />
+                    <p class="homeFormErrorText" id="nameError" style="display: none">
+                        Iltimos, ismingizni kiriting
+                    </p>
+                </div>
+                <div class="HomeFormRow mb-3">
+                    <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz</label>
+
+
+                    <div class="phone-input-container">
+                        <div class="country-selector">
+                            <div class="selected-country" id="selectedCountry" style=" border-radius: 10px">
+                                <span id="selectedCountryCode">uz</span>
+                                <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="country-dropdown" id="countryDropdown" style="display: none"></div>
+                        <input class="HomeFormRowInput tel" type="tel" id="phone" name="phone"
+                            placeholder="+998 88 888 88 88" style="border-radius: 10px;" />
+                    </div>
+
+
+
+                    <p class="homeFormErrorText" id="phoneError" style="display: none">
+                        ❌ Telefon raqam mos emas!
+                    </p>
+                </div>
+                <div id="errorMessage" class="homeFormErrorText" style="display: none; color: red; margin-bottom: 10px">
+                    Xatolik yuz berdi, qayta urinib ko'ring.
+                </div>
+                <button type="submit" class="HomeFormBtn" id="submitBtn"
+                    style="padding-left: 0; height: 50px; width: 100%;padding-right: 0;">
+                    DAVOM ETISH
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script defer src="./js/app.js"></script>   
+    <script defer src="./js/forma.js"></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/thankYou.js"></script>
+</body>
+
+</html>
