@@ -6,12 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osiyo Ismailova VLS</title>
     <style>
-.signUp_info {max-width: 296px;text-align: center;font-family: "TRY Grtsk", sans-serif;font-weight: 700;font-size: clamp(19px, 6vw, 22px);line-height: 125%;margin-bottom: 18px;margin-left: auto;margin-right: auto;}.homeFormErrorText {color: #e53e3e;margin-bottom: 12px;font-size: 14px;font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;padding-top: 5px;padding-bottom: 5px;}.HomeFormRowInput, .HomeFormRowLabel {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;font-size: 14px;}.homeForm-label {font-size: 14px;line-height: 125%;font-weight: 400;font-family: Involve, sans-serif;margin-bottom: 2px;}.HomeFormRow {margin-bottom: 15px;margin-top: 6px;}.HomeFormRowLabel {display: block;margin-bottom: 6px;color: #000;}.HomeFormRowInput {width: 100%;padding: 10px 30px;background-color: white;border: 1px solid #BFBFBF;min-height: 40px;border-radius: 8px;font-weight: 400;outline: 0;height: 50px;transition: border-color 0.2s;}.HomeFormRowInput:focus {border-color: #828282;}.HomeFormRowInput::placeholder {color: #aaa;}#registrationForm2 {position: relative;padding: 20px 25px;border-radius: 30px;background: #F6F6F6;z-index: 1;}#registrationForm2::before {content: "";position: absolute;inset: 0;padding: 2px;border-radius: inherit;background: linear-gradient(180deg, #16D7C2 0%, #0C7166 100%);-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);-webkit-mask-composite: xor;mask-composite: exclude;z-index: -1;}.HomeFormBtn {margin-left: auto;margin-right: auto;cursor: pointer;border-radius: 50px;background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%);transition: 0.3s;box-shadow: 0px 4px 0px 0px #8C0000;font-weight: 700;text-transform: uppercase;font-size: 18px;line-height: 100%;color: white;border: none;position: relative;display: flex;align-items: center;justify-content: center;font-family: "TRY Grtsk", sans-serif;padding: clamp(20px, 6vw, 25px);transition: all 0.3s;cursor: pointer;position: relative;max-width: 271px;}.HomeFormBtn__arrow {position: absolute;left: 30px;top: 50%;transform: translateY(-50%);}.HomeFormBtn:disabled {cursor: not-allowed;opacity: 70%;background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%);}.phone-input-container {display: flex;align-items: center;position: relative;margin-top: 6px;}.country-selector {margin-right: -20px;z-index: 20;position: relative;}.selected-country {display: flex;align-items: center;padding: 10px;border: 1px solid #BFBFBF;border-radius: 6px;background-color: #858585;color: white;cursor: pointer;min-height: 50px;font-family: sans-serif !important;font-weight: 400 !important;}.country-dropdown {position: absolute;margin-top: 10px;top: 100%;left: 0;width: 100%;background-color: transparent;border: 1px solid #2B2B2B80;border-radius: 6px;box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);z-index: 40;max-height: 200px;overflow-y: auto;font-family: sans-serif !important;font-weight: 400 !important;}.country-option {display: flex;align-items: center;padding: 10px;cursor: pointer;font-family: sans-serif;font-weight: 400 !important;background-color: #fff;}.country-option:hover {background-color: #f3f7f8;}.country-option.selected {background-color: #e6f0fa;}.country-code {margin-left: auto;margin-right: 10px;}@media (max-width:440px) {#registrationForm2 {padding: 15px 20px;}}
+        .signUp_info {
+            max-width: 296px;
+            text-align: center;
+            font-family: "TRY Grtsk", sans-serif;
+            font-weight: 700;
+            font-size: clamp(19px, 6vw, 22px);
+            line-height: 125%;
+            margin-bottom: 18px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .homeFormErrorText {
+            color: #e53e3e;
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .HomeFormRowInput,
+        .HomeFormRowLabel {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 14px;
+        }
+
+        .homeForm-label {
+            font-size: 14px;
+            line-height: 125%;
+            font-weight: 400;
+            font-family: Involve, sans-serif;
+            margin-bottom: 2px;
+        }
+
+        .HomeFormRow {
+            margin-bottom: 15px;
+            margin-top: 6px;
+        }
+
+        .HomeFormRowLabel {
+            display: block;
+            margin-bottom: 6px;
+            color: #000;
+        }
+
+        .HomeFormRowInput {
+            width: 100%;
+            padding: 10px 30px;
+            background-color: white;
+            border: 1px solid #BFBFBF;
+            min-height: 40px;
+            border-radius: 8px;
+            font-weight: 400;
+            outline: 0;
+            height: 50px;
+            transition: border-color 0.2s;
+        }
+
+        .HomeFormRowInput:focus {
+            border-color: #828282;
+        }
+
+        .HomeFormRowInput::placeholder {
+            color: #aaa;
+        }
+
+        #registrationForm2 {
+            position: relative;
+            padding: 20px 25px;
+            border-radius: 30px;
+            background: #F6F6F6;
+            z-index: 1;
+        }
+
+        #registrationForm2::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 2px;
+            border-radius: inherit;
+            background: linear-gradient(180deg, #16D7C2 0%, #0C7166 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: -1;
+        }
+
+        .HomeFormBtn {
+            cursor: pointer;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%);
+            transition: 0.3s;
+            box-shadow: 0px 4px 0px 0px #8C0000;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 100%;
+            color: white;
+            border: none;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "TRY Grtsk", sans-serif;
+            padding: clamp(20px, 6vw, 25px);
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+            max-width: 271px;
+        }
+
+        .HomeFormBtn__arrow {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .HomeFormBtn:disabled {
+            cursor: not-allowed;
+            opacity: 70%;
+            background: linear-gradient(90deg, #D71616 0%, #EF5353 54.33%, #D71616 100%);
+        }
+
+        .phone-input-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-top: 6px;
+        }
+
+        .country-selector {
+            margin-right: -20px;
+            z-index: 20;
+            position: relative;
+        }
+
+        .selected-country {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #BFBFBF;
+            border-radius: 6px;
+            background-color: #858585;
+            color: white;
+            cursor: pointer;
+            min-height: 50px;
+            font-family: sans-serif !important;
+            font-weight: 400 !important;
+        }
+
+        .country-dropdown {
+            position: absolute;
+            margin-top: 10px;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid #2B2B2B80;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 40;
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: sans-serif !important;
+            font-weight: 400 !important;
+        }
+
+        .country-option {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+            font-family: sans-serif;
+            font-weight: 400 !important;
+            background-color: #fff;
+        }
+
+        .country-option:hover {
+            background-color: #f3f7f8;
+        }
+
+        .country-option.selected {
+            background-color: #e6f0fa;
+        }
+
+        .country-code {
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        @media (max-width:440px) {
+            #registrationForm2 {
+                padding: 15px 20px;
+            }
+        }
     </style>
 
     <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
     <noscript>
         <link rel="stylesheet" href="./css/main.css" />
+    </noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     </noscript>
 </head>
 
@@ -85,7 +286,7 @@
                     style="display: none; color: red; margin-bottom: 10px">
                     Xatolik yuz berdi, qayta urinib ko'ring.
                 </div>
-                <button class="HomeFormBtn" id="submitBtn2" style="margin-bottom: 10px;">
+                <button class="HomeFormBtn" id="submitBtn2" style="margin-bottom: 10px; margin: 0 auto;">
                     Ro’yxatdan o’tish
                 </button>
             </form>
@@ -94,8 +295,8 @@
 
 
 
-     <!-- Modal -->
-     <div id="registrationModal" class="homeModal" style="display: none">
+    <!-- Modal -->
+    <div id="registrationModal" class="homeModal" style="display: none">
         <div class="homeModalOverlay"></div>
         <div class="homeFormContainer">
             <button class="closeButton" id="closeModalBtn">
@@ -156,7 +357,97 @@
 
     <div class="lazyHTML"></div>
 
-    <script defer src="./js/app.js"></script>   
+    <!-- coments start -->
+    <section class="section">
+        <div class="all_results__container container">
+            <div class="all__results__box">
+                <div class="course__top">
+                    <h2 class="teacher__title">O’quvchilarim <br>
+                        fikrlari</h2>
+                    <div class="hero__subBoxs">🔥🍋</div>
+                </div>
+            </div>
+
+
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper" style="margin-bottom: 38px;">
+                    <div class="swiper-slide">
+                        <img loading="lazy" decoding="async" width="258" height="561" src="./images/comments/1.avif"
+                            alt="comment" class="coments__img">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img loading="lazy" decoding="async" width="263" height="554" src="./images/comments/2.avif"
+                            alt="comment" class="coments__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" decoding="async" width="269" height="554" src="./images/comments/3.avif"
+                            alt="comment" class="coments__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" decoding="async" width="257" height="423" src="./images/comments/4.avif"
+                            alt="comment" class="coments__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img loading="lazy" decoding="async" width="261" height="180" src="./images/comments/5.avif"
+                            alt="comment" class="coments__img">
+                    </div>
+                </div>
+                <div class="swiper_buttons">
+                    <div class="swiper-button-prev3 swiper-button">
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect x="7" y="10.4412" width="7" height="9.88235" transform="rotate(180 7 10.4412)"
+                                fill="url(#pattern0_38_34)" />
+                            <defs>
+                                <pattern id="pattern0_38_34" patternContentUnits="objectBoundingBox" width="1"
+                                    height="1">
+                                    <use xlink:href="#image0_38_34"
+                                        transform="translate(-0.176471) scale(0.00551471 0.00390625)" />
+                                </pattern>
+                                <image id="image0_38_34" width="256" height="256" preserveAspectRatio="none"
+                                    xlink:href="data:image/png;base64,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" />
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="swiper-button-next3 swiper-button">
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect y="0.558838" width="7" height="9.88235" fill="url(#pattern0_38_36)" />
+                            <defs>
+                                <pattern id="pattern0_38_36" patternContentUnits="objectBoundingBox" width="1"
+                                    height="1">
+                                    <use xlink:href="#image0_38_36"
+                                        transform="translate(-0.176471) scale(0.00551471 0.00390625)" />
+                                </pattern>
+                                <image id="image0_38_36" width="256" height="256" preserveAspectRatio="none"
+                                    xlink:href="data:image/png;base64,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" />
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <button class="HomeFormBtn registerBtns">
+                    Kursga qatnashish
+                </button>
+
+            </div>
+        </div>
+    </section>
+    <!-- coments end -->
+
+    <!-- bottom start -->
+    <section class="botom">
+        <div class="bottom__container">
+            <p class="bottom__text">24 soatdan so'ng qabul yopiladi:</p>
+            <p class="bottom_timer">00:00:00</p>
+        </div>
+    </section>
+    <!-- bottom end -->
+
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/app.js"></script>
     <script defer src="./js/forma.js"></script>
     <script defer src="./js/modal.js"></script>
     <script defer src="./js/thankYou.js"></script>
